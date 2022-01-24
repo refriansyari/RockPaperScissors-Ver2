@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RockPaperScissorsTheGame</string>
+    <string name="text_player">Player</string>
+    <string name="text_computer">Com</string>
+    <string name="text_rock_paper_scissors">ROCK PAPER SCISSORS</string>
+    <string name="text_player_win">PLAYER WIN!</string>
+    <string name="text_computer_win">COMPUTER WIN!</string>
+    <string name="text_draw">DRAW!</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_marvel"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_game_title"
+        style="@style/Text.Title.40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/tv_background"
+        android:text="@string/text_rock_paper_scissors"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_game_status"
+        style="@style/Text.Status.35"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@id/tv_game_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_game_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_game_title"
+        tools:text="@string/text_player_win" />
+
+    <LinearLayout
+        android:id="@+id/ll_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_game_status">
+
+        <TextView
+            style="@style/Text.30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_player" />
+
+        <FrameLayout
+            android:id="@+id/fl_choice_1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rock" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choice_2"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_2"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_paper" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choice_3"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_3"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_scissors" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_game_status">
+
+        <TextView
+            style="@style/Text.30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_computer" />
+
+        <FrameLayout
+            android:id="@+id/fl_choice_4"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_4"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rock_mirror" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choice_5"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_5"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_paper_mirror" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choice_6"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/iv_choice_6"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_scissors_mirror" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_vs_sign"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:src="@drawable/ic_vs_sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_player"
+        app:layout_constraintEnd_toStartOf="@id/ll_computer"
+        app:layout_constraintTop_toBottomOf="@id/tv_game_status" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
