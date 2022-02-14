@@ -3,7 +3,23 @@
     <string name="text_player">Player</string>
     <string name="text_computer">Com</string>
     <string name="text_rock_paper_scissors">ROCK PAPER SCISSORS</string>
-    <string name="text_player_win">PLAYER WIN!</string>
-    <string name="text_computer_win">COMPUTER WIN!</string>
-    <string name="text_draw">DRAW!</string>
+    <string name="text_player_win">PLAYER WIN !</string>
+    <string name="text_computer_win">COMPUTER WIN !</string>
+    <string name="text_draw">GAME DRAW !</string>
+    <string name="text_your_opponents">Your opponents !</string>
+    <string name="text_computer_opponent">[COMPUTER]</string>
+    <string name="text_player_opponent">[PLAYER]</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_input_name_to_proceed">Input name to proceed battle !</string>
+    <string name="text_placeholder_versus_computer">%s VS COMPUTER</string>
+    <string name="text_placeholder_versus_player">%s VS PLAYER</string>
+    <string name="text_game_announcement">%s WIN ! </string>
+    <string name="text_player_2_win">PLAYER 2 WIN !</string>
+    <string name="text_player_1_turn">PLAYER 1 TURN</string>
+    <string name="text_player_2_turn">PLAYER 2 TURN</string>
+    <string name="text_play_again">PLAY AGAIN</string>
+    <string name="text_main_menu">MAIN MENU</string>
+    <string name="text_player_2">PLAYER 2</string>
 </resources>

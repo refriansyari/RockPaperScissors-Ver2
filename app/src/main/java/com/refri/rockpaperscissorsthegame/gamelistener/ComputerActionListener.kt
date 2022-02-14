@@ -1,15 +1,14 @@
 package com.refri.rockpaperscissorsthegame.gamelistener
 
 import com.refri.rockpaperscissorsthegame.R
-import com.refri.rockpaperscissorsthegame.databinding.ActivityMainBinding
+import com.refri.rockpaperscissorsthegame.databinding.ActivityGameBinding
 import com.refri.rockpaperscissorsthegame.enum.MaterialSelection
 import kotlin.random.Random
 
 class ComputerActionListener {
     var computerChoice: MaterialSelection? = null
 
-    fun setRandomChoice(binding:ActivityMainBinding) {
-
+    fun setRandomChoice(binding: ActivityGameBinding) {
         var randomnumber = Random.nextInt(0, 3)
         when (randomnumber) {
             0 -> {
@@ -68,5 +67,5 @@ class ComputerActionListener {
             }
         }
     }
-
 }
+

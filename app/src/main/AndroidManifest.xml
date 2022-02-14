@@ -10,13 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RockPaperScissorsTheGame">
         <activity
-            android:name=".MainActivity"
+            android:name=".menu.MenuGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.appintropage.IntroAppActivity"
+            android:exported="true"
+            android:label="My Custom AppIntro">
+        </activity>
+        <activity
+            android:name=".game.GameActivity"
+            android:exported="true">
         </activity>
     </application>
 

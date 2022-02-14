@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_marvel"
-    tools:context=".MainActivity">
+    tools:context=".game.GameActivity">
 
     <TextView
         android:id="@+id/tv_game_title"
@@ -43,7 +43,9 @@
         app:layout_constraintTop_toBottomOf="@id/tv_game_status">
 
         <TextView
-            style="@style/Text.30"
+            android:id="@+id/tv_player_name"
+            style="@style/Text.Status.35"
+            android:textSize="@dimen/_31ssp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_player" />
@@ -102,7 +104,9 @@
         app:layout_constraintTop_toBottomOf="@id/tv_game_status">
 
         <TextView
-            style="@style/Text.30"
+            android:id="@+id/tv_computer_name"
+            style="@style/Text.Status.35"
+            android:textSize="@dimen/_31ssp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_computer" />

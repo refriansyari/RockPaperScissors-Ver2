@@ -7,6 +7,20 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="Text.Title.36" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/_36ssp</item>
+        <item name="fontFamily">@font/marvel_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Text.Title.28" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/_28ssp</item>
+        <item name="fontFamily">@font/marvel_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
     <style name="Text.Status.35" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/_35ssp</item>
         <item name="fontFamily">@font/ironman_2</item>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_white_rad">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/Text.Status.35"
+        android:background="#1C1C1B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="PLAYER 1 WIN" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialog_title">
+
+        <ImageView
+            android:id="@+id/iv_dialog_trophy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/ic_trophy_win"/>
+
+        <Button
+            android:id="@+id/btn_dialog_play_again"
+            style="@style/Text.Title.28"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_dialog"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/text_play_again"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_dialog_main_menu"
+            style="@style/Text.Title.28"
+            android:padding="@dimen/_8sdp"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/btn_bg_dialog"
+            android:text="@string/text_main_menu"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_dialog_play_again" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
